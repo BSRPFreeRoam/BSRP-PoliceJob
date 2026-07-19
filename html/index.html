@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BSRP Police</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="fingerprint" class="overlay hidden">
+      <div class="panel fp-panel">
+        <div class="edge edge-top"></div>
+        <div class="corner c-tl"></div>
+        <div class="corner c-tr"></div>
+        <div class="corner c-bl"></div>
+        <div class="corner c-br"></div>
+        <div class="glow-bar"></div>
+        <div class="badge"><span class="pulse-dot"></span> BIOMETRIC SCAN</div>
+        <h1>FINGERPRINT LINK</h1>
+        <p class="tag">LAW ENFORCEMENT DATABASE</p>
+        <div class="brand-line"></div>
+        <div class="scan-ring"></div>
+        <div class="fp-grid">
+          <div><span class="k">SUBJECT</span><span class="v" id="fpName">—</span></div>
+          <div><span class="k">CID</span><span class="v" id="fpCid">—</span></div>
+          <div><span class="k">IDENTIFIER</span><span class="v" id="fpId">—</span></div>
+          <div><span class="k">AFFILIATION</span><span class="v" id="fpJob">—</span></div>
+        </div>
+        <button type="button" class="btn primary" id="fpClose">CLOSE LINK</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
